@@ -89,9 +89,10 @@ function getRadioValue() {
   radioInputs.forEach((radioInput) => {
     if (radioInput.checked) {
       getRadioValue = radioInput.value;
-      return  radioValue;
+    
     }
   })
+  return  getRadioValue;
 }
 
 // Form that decides amout of question 
@@ -114,4 +115,4 @@ startForm.addEventListener('click', () => {
 })
 
 // Event Listeners
-startForm.addEventListener('click', selectQuestionAmount)
+startForm.addEventListener('submit', selectQuestionAmount)
